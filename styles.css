@@ -43,11 +43,11 @@ button:hover {
     cursor: pointer;
 }
 
-.number-key {
+.number {
     background-color: #3C4043;
 }
 
-.operator {
+.other {
     background-color: #5F6368;
 }
 
