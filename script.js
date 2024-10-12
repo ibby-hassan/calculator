@@ -37,6 +37,15 @@ numberKeys.forEach(key => {
         inputArray.push("number");
     });
 });
+
+let decimalKey = document.querySelector('.decimal');
+decimalKey.addEventListener('click', function() {
+    if (inputArray[inputArray.length - 1] == "number" && !inputString.includes('.')) {
+        inputString += '.';
+        displayScreen.value = inputString;
+    }
+});
+
 let operatorKeys = document.querySelectorAll('button[value="+"], button[value="*"], button[value="/"]');
 operatorKeys.forEach(key => {
     key.addEventListener('click', function() {
