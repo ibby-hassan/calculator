@@ -43,6 +43,10 @@ button:hover {
     cursor: pointer;
 }
 
+.bracket:hover {
+    cursor: default;
+}
+
 .number {
     background-color: #3C4043;
 }
