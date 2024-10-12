@@ -112,6 +112,18 @@ clearKey.addEventListener('click', function() {
     displayScreen.value = '';
 });
 
+let delKey = document.querySelector('button[value="del"]');
+delKey.addEventListener('click', function() {
+    if (inputArray[inputArray.length - 1] == "equal" ||
+        inputArray[inputArray.length - 1] == "operator") {
+        return;
+    }
+    else {
+        inputString = inputString.slice(0, -1);
+        inputArray.pop();
+        displayScreen.value = inputString;
+    }
+});
 
 
 //Keyboard functionality
